@@ -1,0 +1,9 @@
+# The project's base directory is set to "bot", so Netlify reads this file.
+# Static info page only. The bot itself (../index.js) is a long-running process
+# and must be hosted on an always-on platform, not Netlify.
+[build]
+  command = "echo 'No build step'"
+  publish = "public"
+
+[functions]
+  directory = "netlify/functions"
